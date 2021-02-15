@@ -20,7 +20,7 @@ module.exports = {
     ecmaVersion: 12,
     sourceType: "module",
   },
-  plugins: ["react"],
+  plugins: ["react", "prettier"],
   rules: {
     quotes: [2, "double", { avoidEscape: true }],
     "react/jsx-filename-extension": [
@@ -56,5 +56,6 @@ module.exports = {
         },
       },
     ],
+    "prettier/prettier": "error",
   },
 };
